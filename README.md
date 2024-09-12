@@ -9,4 +9,5 @@ Developed a full-stack IoT application utilizing React for the front-end, Node-R
 * Frontend: React.js
 * Backend: Node-RED (with custom nodes for device communication)
 * Database: PostgreSQL
+* Data-simulator: Python
 * IoT Communication Protocols: MQTT, HTTP
