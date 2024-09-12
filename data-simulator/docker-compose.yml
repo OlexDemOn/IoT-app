@@ -1,0 +1,65 @@
+version: '3.9'
+
+services:
+  database:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: all_machine_data
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  mqtt-broker:
+    image: eclipse-mosquitto
+    ports:
+      - "1883:1883"
+      - "9001:9001"
+    volumes:
+      - ./mosquitto/mosquitto_config/mosquitto.conf:/mosquitto/config/mosquitto.conf
+      - ./mosquitto/mosquitto_data:/mosquitto/data
+      - ./mosquitto/mosquitto_log:/mosquitto/log
+
+  nodered:
+    build:
+      context: ./nodered
+    ports:
+      - "1880:1880"
+    volumes:
+      - ./nodered/nodered_data:/data
+      - ./nodered/nodered_data/settings.js:/data/settings.js
+    environment:
+      - NODE_RED_API_URL=http://backend:5000/api
+      - NODE_RED_MQTT_URL=mqtt://mqtt-broker:1883
+    depends_on:
+      - mqtt-broker
+      - backend
+
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+      - mqtt-broker
+    environment:
+      - REACT_APP_API_URL=http://backend:5000/api
+      - REACT_APP_MQTT_URL=mqtt://mqtt-broker:1883
+
+  backend:
+    build:
+      context: ./backend
+    ports:
+      - "5000:5000"
+    environment:
+      - FLASK_ENV=development
+      - DATABASE_URL=postgresql://admin:admin@database:5432/all_machine_data
+    depends_on:
+      - database
+
+volumes:
+  postgres_data:
+  nodered_data:

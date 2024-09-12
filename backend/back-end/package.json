@@ -1,0 +1,15 @@
+{
+    "name": "node-red-project",
+    "description": "A Node-RED Project",
+    "version": "0.0.1",
+    "private": true,
+    "dependencies": {
+        "@platmac/node-red-pdfbuilder": "~1.1.0",
+        "node-red-contrib-bcrypt": "~0.1.6",
+        "node-red-contrib-cache": "~2.0.3",
+        "node-red-contrib-influxdb": "~0.7.0",
+        "node-red-contrib-jwt": "~0.1.0",
+        "node-red-contrib-postgresql": "~0.14.2",
+        "postgrestor": "~0.0.2"
+    }
+}

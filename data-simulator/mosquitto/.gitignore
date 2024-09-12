@@ -1,0 +1,6 @@
+mosquitto_data/
+mosquitto_log/
+
+# Ignore system files
+.DS_Store
+Thumbs.db

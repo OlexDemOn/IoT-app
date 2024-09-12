@@ -1,0 +1,53 @@
+<script type="text/javascript">
+    RED.nodes.registerType("ReportJSON", {
+        category: "function",
+        color: "#a6bbcf",
+        defaults: {
+            name: { value: "" },
+        },
+        inputs: 1,
+        outputs: 1,
+        icon: "font-awesome/fa-file-pdf-o",
+        label: function () {
+            return this.name || "ReportJSON";
+        },
+        oneditprepare: function () {
+            this.editor = RED.editor.createEditor({
+                id: "node-description-editor",
+                mode: "ace/mode/markdown",
+                value: $("#node-input-info").val(),
+            });
+
+            let config = this;
+            $("#node-input-agrData").typedInput({
+                types: [
+                    {
+                        value: "fruit",
+                        multiple: "true",
+                        options: [
+                            { value: "apple", label: "Apple" },
+                            { value: "banana", label: "Banana" },
+                            { value: "cherry", label: "Cherry" },
+                        ],
+                    },
+                ],
+            });
+        },
+    });
+</script>
+
+<script type="text/html" data-template-name="ReportJSON">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name" />
+    </div>
+</script>
+
+<input type="text" id="node-input-agrData" />
+
+<script type="text/html" data-help-name="ReportJSON">
+    <p>
+        Node that takes data input and then makes report in JSON file that can
+        be converted into PDF
+    </p>
+</script>

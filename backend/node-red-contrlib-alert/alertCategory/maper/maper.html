@@ -1,0 +1,54 @@
+<script type="text/javascript">
+    RED.nodes.registerType('maper', {
+        category: 'customAlert',
+        color: '#a6bbcf',
+        defaults: {
+            name: { value: '' },
+            jsonCode: { value: '' } 
+        },
+        inputs: 1,
+        outputs: 1,
+        icon: "font-awesome/fa-sitemap",
+        oneditprepare: function () {
+            $("#node-input-jsonCode").typedInput({
+                type: "json",
+                types: ["json"]
+            });
+
+            this.editor = RED.editor.createEditor({
+                id: 'node-input-jsonCode',
+                mode: 'ace/mode/json', 
+                value: this.jsonCode || '' 
+            });
+        },
+        oneditsave: function() {
+            this.jsonCode = this.editor.getValue();
+            this.editor.destroy();
+            delete this.editor;
+        },
+        oneditcancel: function() {
+            this.editor.destroy();
+            delete this.editor;
+        },
+        label: function () {
+            return this.name || 'maper';
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="maper">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-jsonCode"><i class="fa fa-code"></i> Maper</label>
+        <input type="text" id="node-input-jsonCode" placeholder="JSON Code">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="maper">
+    <p>A Node-RED node that allows you to input and send JSON code forward.</p>
+    <p><b>JSON Code</b> - Input the JSON code you want to send as a payload.</p>
+</script>
+

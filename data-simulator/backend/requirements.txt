@@ -1,0 +1,6 @@
+Flask
+Flask-Cors
+paho-mqtt
+SQLAlchemy
+psycopg2-binary
+numpy

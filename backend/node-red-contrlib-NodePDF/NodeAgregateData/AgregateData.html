@@ -1,0 +1,28 @@
+<script type="text/javascript">
+    RED.nodes.registerType('AgregateData',{
+        category: 'function',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:""}
+        },
+        inputs: 1,
+        outputs: 1,
+        icon: "font-awesome/fa-file-pdf-o",
+        label: function() {
+            return this.name||"AgregateData";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="AgregateData">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<input type="text" id="node-input-agrData">
+
+<script type="text/html" data-help-name="AgregateData">
+    <p>Node that agregates data from raw database table based on agregating and grouping input data</p>
+</script>

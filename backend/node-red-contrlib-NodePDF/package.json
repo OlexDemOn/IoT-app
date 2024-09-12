@@ -1,0 +1,12 @@
+{
+  "name": "node-red-pdf",
+  "version": "1.0.0",
+  "description": "Create report in JSON, that can be turned into PDF file, from input data",
+  "keywords": ["node-red"],
+  "node-red" : {
+    "nodes": {
+      "ReportToJSON": "./NodeReport/ReportJSON.js",
+      "AgregateData": "./NodeAgregateData/AgregateData.js"
+    }
+  }
+}

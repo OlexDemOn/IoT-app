@@ -1,0 +1,33 @@
+<script type="text/javascript">
+    RED.nodes.registerType('mqttMaper', {
+        category: 'mqtt',
+        color: '#a6bbcf',
+        defaults: {
+            name: { value: '' },
+            jsonCode: { value: '' } 
+        },
+        inputs: 1,
+        outputs: 1,
+        icon: "font-awesome/fa-sitemap",
+        label: function () {
+            return this.name || 'mqttMaper';
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="mqttMaper">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-jsonCode"><i class="fa fa-code"></i> Topic</label>
+        <input type="text" id="node-input-jsonCode" placeholder="JSON Code">
+    </div>
+</script>
+<!-- 
+<script type="text/html" data-help-name="mqttMaper">
+    <p>A Node-RED node that allows you to input and send JSON code forward.</p>
+    <p><b>JSON Code</b> - Input the JSON code you want to send as a payload.</p>
+</script> -->
+

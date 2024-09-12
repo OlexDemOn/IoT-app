@@ -1,0 +1,3438 @@
+[
+    {
+        "id": "747a24a6918e731b",
+        "type": "tab",
+        "label": "Users",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e370f738154306ce",
+        "type": "tab",
+        "label": "Groups",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "743814465b28750d",
+        "type": "tab",
+        "label": "Home page",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "5baf52e38d3b9ef4",
+        "type": "tab",
+        "label": "Nodered-InfluxDB",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "cde388cf2ef20258",
+        "type": "tab",
+        "label": "Reports",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "b7f0299d154c2c37",
+        "type": "postgresDB",
+        "name": "postgres@127.0.0.1:5432/postgres",
+        "host": "127.0.0.1",
+        "port": "5432",
+        "database": "postgres",
+        "ssl": false,
+        "max": "10",
+        "min": 1,
+        "idle": "1000"
+    },
+    {
+        "id": "d4f09427d91ae234",
+        "type": "postgreSQLConfig",
+        "name": "",
+        "host": "127.0.0.1",
+        "hostFieldType": "str",
+        "port": "5432",
+        "portFieldType": "num",
+        "database": "postgres",
+        "databaseFieldType": "str",
+        "ssl": "false",
+        "sslFieldType": "bool",
+        "applicationName": "",
+        "applicationNameType": "str",
+        "max": "10",
+        "maxFieldType": "num",
+        "idle": "1000",
+        "idleFieldType": "num",
+        "connectionTimeout": "10000",
+        "connectionTimeoutFieldType": "num",
+        "user": "postgres",
+        "userFieldType": "str",
+        "password": "postgres",
+        "passwordFieldType": "str"
+    },
+    {
+        "id": "c34319dd72593555",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "mqtt.eclipseprojects.io",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "055b009225987b8a",
+        "type": "influxdb",
+        "hostname": "127.0.0.1",
+        "port": "8086",
+        "protocol": "http",
+        "database": "database",
+        "name": "influxdb_production_line_db",
+        "usetls": false,
+        "tls": "",
+        "influxdbVersion": "2.0",
+        "url": "http://172.24.183.179:8086/",
+        "timeout": "10",
+        "rejectUnauthorized": false
+    },
+    {
+        "id": "0791a7378c0dcf86",
+        "type": "websocket-client",
+        "path": "machines",
+        "tls": "",
+        "wholemsg": "false",
+        "hb": "10",
+        "subprotocol": "",
+        "headers": [
+            {
+                "keyType": "other",
+                "keyValue": "Cache-Control",
+                "valueType": "other",
+                "valueValue": "no-store"
+            },
+            {
+                "keyType": "other",
+                "keyValue": "Content-Type",
+                "valueType": "other",
+                "valueValue": "text/event-stream"
+            },
+            {
+                "keyType": "other",
+                "keyValue": "Connection",
+                "valueType": "other",
+                "valueValue": "keep-alive"
+            }
+        ]
+    },
+    {
+        "id": "4012ec32ccf26ef9",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "192.168.194.177",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "6dc4feeb67b0cf25",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "172.17.3.143",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "37816ffe3e1779dd",
+        "type": "websocket-listener",
+        "path": "/ws/test",
+        "wholemsg": "false"
+    },
+    {
+        "id": "f8f3d8ee0c9b1c5f",
+        "type": "Cache",
+        "name": "test",
+        "defaultTtl": "",
+        "checkPeriod": ""
+    },
+    {
+        "id": "4db78eb653d6d50d",
+        "type": "websocket-client",
+        "path": "ws://localhost:1880/ws/echo",
+        "tls": "",
+        "wholemsg": "false",
+        "hb": "0",
+        "subprotocol": ""
+    },
+    {
+        "id": "7a9320a41e7f64c1",
+        "type": "websocket-client",
+        "path": "/ws/machines",
+        "tls": "",
+        "wholemsg": "false",
+        "hb": "0",
+        "subprotocol": "",
+        "headers": []
+    },
+    {
+        "id": "eafe96b7a9488c36",
+        "type": "Cache",
+        "name": "jwttest",
+        "defaultTtl": "",
+        "checkPeriod": ""
+    },
+    {
+        "id": "50085f491139568b",
+        "type": "http in",
+        "z": "747a24a6918e731b",
+        "name": "",
+        "url": "/getUser",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 220,
+        "y": 300,
+        "wires": [
+            [
+                "08cd29547c8682c9"
+            ]
+        ]
+    },
+    {
+        "id": "08cd29547c8682c9",
+        "type": "function",
+        "z": "747a24a6918e731b",
+        "name": "function 1",
+        "func": "let email = msg.payload.email;\nlet password = msg.payload.password;\n\nmsg.params = [email];\nmsg.password2 = password;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 300,
+        "wires": [
+            [
+                "d2fab7b9d0e47900"
+            ]
+        ]
+    },
+    {
+        "id": "37d851aabf1fc5ab",
+        "type": "bcrypt",
+        "z": "747a24a6918e731b",
+        "name": "",
+        "action": "verify",
+        "field": "password2",
+        "hash": "payload.password",
+        "target": "payload",
+        "assignment": "replace",
+        "match": "match",
+        "outputs": 2,
+        "rounds": 10,
+        "x": 1160,
+        "y": 340,
+        "wires": [
+            [
+                "b32f6265a4511058"
+            ],
+            [
+                "9cb186a805679fd1"
+            ]
+        ]
+    },
+    {
+        "id": "d2fab7b9d0e47900",
+        "type": "postgresql",
+        "z": "747a24a6918e731b",
+        "name": "",
+        "query": "\nSELECT \n\tu.uuid,\n\tu.name,\n\tg.group_name,\n\tu.password\n\tFROM users u\n\tJOIN user_groups ug ON ug.user_uuid = u.uuid\n\tJOIN groups g ON ug.groups_id = g.groups_id\n\tWHERE email = $1;",
+        "postgreSQLConfig": "d4f09427d91ae234",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 570,
+        "y": 300,
+        "wires": [
+            [
+                "45ebc60b8b229eee"
+            ]
+        ]
+    },
+    {
+        "id": "08c2ce96668f1580",
+        "type": "http response",
+        "z": "747a24a6918e731b",
+        "name": "",
+        "statusCode": "200",
+        "headers": {
+            "match": "true"
+        },
+        "x": 1520,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "9cb186a805679fd1",
+        "type": "http response",
+        "z": "747a24a6918e731b",
+        "name": "",
+        "statusCode": "401",
+        "headers": {
+            "match": "false"
+        },
+        "x": 1340,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "5af86b8fde9cc985",
+        "type": "debug",
+        "z": "747a24a6918e731b",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1060,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "11a86ee9a22558c3",
+        "type": "catch",
+        "z": "747a24a6918e731b",
+        "name": "",
+        "scope": null,
+        "uncaught": true,
+        "x": 820,
+        "y": 60,
+        "wires": [
+            [
+                "5af86b8fde9cc985"
+            ]
+        ]
+    },
+    {
+        "id": "3584c209018c0dfa",
+        "type": "http response",
+        "z": "747a24a6918e731b",
+        "name": "",
+        "statusCode": "400",
+        "headers": {
+            "match": "false"
+        },
+        "x": 1000,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "45ebc60b8b229eee",
+        "type": "switch",
+        "z": "747a24a6918e731b",
+        "name": "Check if data exists ",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "empty"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 790,
+        "y": 300,
+        "wires": [
+            [
+                "76c8f460fe7e81f4"
+            ],
+            [
+                "dda460d961da4510"
+            ]
+        ]
+    },
+    {
+        "id": "76c8f460fe7e81f4",
+        "type": "http response",
+        "z": "747a24a6918e731b",
+        "name": "",
+        "statusCode": "401",
+        "headers": {
+            "Error": "User not found"
+        },
+        "x": 980,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "dda460d961da4510",
+        "type": "function",
+        "z": "747a24a6918e731b",
+        "name": "function 8",
+        "func": "msg.payload = msg.payload[0]\nlet user = msg.payload.name\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 980,
+        "y": 320,
+        "wires": [
+            [
+                "37d851aabf1fc5ab"
+            ]
+        ]
+    },
+    {
+        "id": "b32f6265a4511058",
+        "type": "change",
+        "z": "747a24a6918e731b",
+        "name": "delete row",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "payload.password",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1350,
+        "y": 300,
+        "wires": [
+            [
+                "08c2ce96668f1580"
+            ]
+        ]
+    },
+    {
+        "id": "ec17694b7ceb8a71",
+        "type": "http in",
+        "z": "747a24a6918e731b",
+        "name": "",
+        "url": "/deleteUser",
+        "method": "delete",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 210,
+        "y": 660,
+        "wires": [
+            [
+                "9733bea6d5691331"
+            ]
+        ]
+    },
+    {
+        "id": "9733bea6d5691331",
+        "type": "function",
+        "z": "747a24a6918e731b",
+        "name": "Uuid_params",
+        "func": "let uuid = msg.payload.uuid;\n\nmsg.params = [uuid]\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 660,
+        "wires": [
+            [
+                "e494ccffe8f38473"
+            ]
+        ]
+    },
+    {
+        "id": "e494ccffe8f38473",
+        "type": "postgresql",
+        "z": "747a24a6918e731b",
+        "name": "DeleteFromUser_Groups",
+        "query": "DELETE FROM user_groups\nWHERE user_uuid = $1;",
+        "postgreSQLConfig": "d4f09427d91ae234",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 630,
+        "y": 660,
+        "wires": [
+            [
+                "26dfe1e6fc62f1d6"
+            ]
+        ]
+    },
+    {
+        "id": "2cab9df98b25adb3",
+        "type": "http response",
+        "z": "747a24a6918e731b",
+        "name": "",
+        "statusCode": "200",
+        "headers": {},
+        "x": 1260,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "26dfe1e6fc62f1d6",
+        "type": "postgresql",
+        "z": "747a24a6918e731b",
+        "name": "DeleteFromUsers",
+        "query": "DELETE FROM users\nWHERE uuid = $1\nRETURNING *;",
+        "postgreSQLConfig": "d4f09427d91ae234",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 870,
+        "y": 660,
+        "wires": [
+            [
+                "c337c5f8738feaef"
+            ]
+        ]
+    },
+    {
+        "id": "c337c5f8738feaef",
+        "type": "switch",
+        "z": "747a24a6918e731b",
+        "name": "UserDeleted?",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "nempty"
+            },
+            {
+                "t": "empty"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1080,
+        "y": 660,
+        "wires": [
+            [
+                "2cab9df98b25adb3"
+            ],
+            [
+                "0e9705b79a81aa0d"
+            ]
+        ],
+        "outputLabels": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "0e9705b79a81aa0d",
+        "type": "http response",
+        "z": "747a24a6918e731b",
+        "name": "",
+        "statusCode": "400",
+        "headers": {},
+        "x": 1260,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "cc6d08b5282a035a",
+        "type": "http in",
+        "z": "747a24a6918e731b",
+        "name": "",
+        "url": "/checkAdmin",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 210,
+        "y": 960,
+        "wires": [
+            [
+                "ba43de1547f46c08"
+            ]
+        ]
+    },
+    {
+        "id": "ba43de1547f46c08",
+        "type": "function",
+        "z": "747a24a6918e731b",
+        "name": "Uuid_params",
+        "func": "let uuid = msg.payload.uuid;\n\nmsg.uuid = uuid\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 960,
+        "wires": [
+            [
+                "895220d979309dfd"
+            ]
+        ]
+    },
+    {
+        "id": "e3e91a936322de58",
+        "type": "postgresql",
+        "z": "747a24a6918e731b",
+        "name": "checkAdmin",
+        "query": "SELECT user_uuid FROM user_groups\nWHERE groups_id = $2 AND user_uuid = $1",
+        "postgreSQLConfig": "d4f09427d91ae234",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 990,
+        "y": 960,
+        "wires": [
+            [
+                "9188e70186234ad6"
+            ]
+        ]
+    },
+    {
+        "id": "895220d979309dfd",
+        "type": "postgresql",
+        "z": "747a24a6918e731b",
+        "name": "getGroupId",
+        "query": "SELECT groups_id FROM groups\nWHERE group_name = 'admin';",
+        "postgreSQLConfig": "d4f09427d91ae234",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 610,
+        "y": 960,
+        "wires": [
+            [
+                "5f8f15a005d3686f"
+            ]
+        ]
+    },
+    {
+        "id": "5f8f15a005d3686f",
+        "type": "function",
+        "z": "747a24a6918e731b",
+        "name": "Group_params",
+        "func": "msg.payload = msg.payload[0]\nlet group_id = msg.payload.groups_id\nlet uuid = msg.uuid\n\nmsg.params = [uuid, group_id]\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 960,
+        "wires": [
+            [
+                "e3e91a936322de58"
+            ]
+        ]
+    },
+    {
+        "id": "9188e70186234ad6",
+        "type": "function",
+        "z": "747a24a6918e731b",
+        "name": "ReturnValue",
+        "func": "if(msg.uuid = msg.payload[0]){\n    msg.payload = \"true\"\n}else{\n    msg.payload = \"false\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1170,
+        "y": 960,
+        "wires": [
+            [
+                "2ebd4c1addf5cb42"
+            ]
+        ]
+    },
+    {
+        "id": "2ebd4c1addf5cb42",
+        "type": "http response",
+        "z": "747a24a6918e731b",
+        "name": "",
+        "statusCode": "200",
+        "headers": {},
+        "x": 1340,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "25e86f846e96c37d",
+        "type": "http in",
+        "z": "747a24a6918e731b",
+        "name": "",
+        "url": "/addUser",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 220,
+        "y": 500,
+        "wires": [
+            [
+                "5436be5fb09bcfbe"
+            ]
+        ]
+    },
+    {
+        "id": "6893e1827c4f513d",
+        "type": "function",
+        "z": "747a24a6918e731b",
+        "name": "User_params",
+        "func": "let name = msg.payload.name;\nlet email = msg.payload.email;\nlet password = msg.payload.password;\n\nmsg.params = [email, name, password];\nmsg.length = msg.params.length;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 500,
+        "wires": [
+            [
+                "188835bd61e9debb"
+            ]
+        ]
+    },
+    {
+        "id": "6627c9cd262df192",
+        "type": "postgresql",
+        "z": "747a24a6918e731b",
+        "name": "CreateUser",
+        "query": "INSERT INTO users (email, name, password)\nVALUES ($1, $2, $3)\nRETURNING *;",
+        "postgreSQLConfig": "d4f09427d91ae234",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 950,
+        "y": 520,
+        "wires": [
+            [
+                "5c95de8a9fdb39ea"
+            ]
+        ]
+    },
+    {
+        "id": "5436be5fb09bcfbe",
+        "type": "bcrypt",
+        "z": "747a24a6918e731b",
+        "name": "",
+        "action": "encrypt",
+        "field": "payload.password",
+        "hash": "payload",
+        "target": "payload",
+        "assignment": "replace",
+        "match": "match",
+        "outputs": 1,
+        "rounds": 10,
+        "x": 390,
+        "y": 500,
+        "wires": [
+            [
+                "6893e1827c4f513d"
+            ]
+        ]
+    },
+    {
+        "id": "f018c84a64119cfc",
+        "type": "http response",
+        "z": "747a24a6918e731b",
+        "name": "",
+        "statusCode": "201",
+        "headers": {},
+        "x": 1860,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "6e14b3f60d48ede1",
+        "type": "http response",
+        "z": "747a24a6918e731b",
+        "name": "",
+        "statusCode": "400",
+        "headers": {},
+        "x": 940,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "188835bd61e9debb",
+        "type": "switch",
+        "z": "747a24a6918e731b",
+        "name": "ParamsExist?",
+        "property": "length",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "3",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "3",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 760,
+        "y": 500,
+        "wires": [
+            [
+                "6e14b3f60d48ede1"
+            ],
+            [
+                "6627c9cd262df192"
+            ]
+        ]
+    },
+    {
+        "id": "7069f621d24e9475",
+        "type": "postgresql",
+        "z": "747a24a6918e731b",
+        "name": "DefaultGroupId",
+        "query": "SELECT groups_id FROM groups\nWHERE group_name = 'DefaultGroup';",
+        "postgreSQLConfig": "d4f09427d91ae234",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 1300,
+        "y": 520,
+        "wires": [
+            [
+                "2b73ca50cb78b3b7"
+            ]
+        ]
+    },
+    {
+        "id": "9ac801a54e8b0629",
+        "type": "postgresql",
+        "z": "747a24a6918e731b",
+        "name": "AssignToDefault",
+        "query": "INSERT INTO user_groups (groups_id, user_uuid)\nVALUES ({{{msg.group}}}, '{{{msg.uuid}}}');",
+        "postgreSQLConfig": "d4f09427d91ae234",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 1680,
+        "y": 520,
+        "wires": [
+            [
+                "f018c84a64119cfc"
+            ]
+        ]
+    },
+    {
+        "id": "5c95de8a9fdb39ea",
+        "type": "function",
+        "z": "747a24a6918e731b",
+        "name": "SaveUuid",
+        "func": "msg.uuid = msg.payload[0].uuid\nmsg.params = undefined;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1120,
+        "y": 520,
+        "wires": [
+            [
+                "7069f621d24e9475"
+            ]
+        ]
+    },
+    {
+        "id": "2b73ca50cb78b3b7",
+        "type": "function",
+        "z": "747a24a6918e731b",
+        "name": "SaveGroupId",
+        "func": "msg.group = msg.payload[0].groups_id\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1490,
+        "y": 520,
+        "wires": [
+            [
+                "9ac801a54e8b0629"
+            ]
+        ]
+    },
+    {
+        "id": "48ec6592ebfacd45",
+        "type": "http in",
+        "z": "747a24a6918e731b",
+        "name": "",
+        "url": "/showUsers",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 210,
+        "y": 800,
+        "wires": [
+            [
+                "acd7163e26686cb7"
+            ]
+        ]
+    },
+    {
+        "id": "acd7163e26686cb7",
+        "type": "postgresql",
+        "z": "747a24a6918e731b",
+        "name": "",
+        "query": "SELECT uuid, email, name FROM users;",
+        "postgreSQLConfig": "d4f09427d91ae234",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 410,
+        "y": 800,
+        "wires": [
+            [
+                "9a53465e61367392"
+            ]
+        ]
+    },
+    {
+        "id": "e2a96e1638c17773",
+        "type": "http in",
+        "z": "747a24a6918e731b",
+        "name": "",
+        "url": "editUser",
+        "method": "put",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 210,
+        "y": 1080,
+        "wires": [
+            [
+                "cf3f9117c4e88727"
+            ]
+        ]
+    },
+    {
+        "id": "bac3283183ee1a6b",
+        "type": "function",
+        "z": "747a24a6918e731b",
+        "name": "SQL_UpdateUser",
+        "func": "let uuid = msg.payload.uuid;\nlet username = msg.payload.name\nlet email = msg.payload.email;\nlet password = msg.payload.password;\nlet sqldata = [];\n\nif (username !== \"\") {\n  sqldata.push(`name = '${username}'`)\n}\n\nif (email !== \"\"){\n  sqldata.push(`email = '${email}'`)\n}\nif (password !== \"\"){\n  sqldata.push(`password = '${password}'`)\n}\n\nlet check = `UPDATE users SET ${sqldata.join(\", \")} WHERE uuid = '${uuid}';`\nif(sqldata.length !== 0 && uuid !== undefined){\n  msg.query = check\n}else{\n  msg.query = ''\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 1080,
+        "wires": [
+            [
+                "4d87126b6cdd384f"
+            ]
+        ]
+    },
+    {
+        "id": "4f1305e926842b31",
+        "type": "postgresql",
+        "z": "747a24a6918e731b",
+        "name": "UpdateUser",
+        "query": "",
+        "postgreSQLConfig": "d4f09427d91ae234",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 1150,
+        "y": 1100,
+        "wires": [
+            [
+                "146fd938d455ed4b"
+            ]
+        ]
+    },
+    {
+        "id": "146fd938d455ed4b",
+        "type": "http response",
+        "z": "747a24a6918e731b",
+        "name": "",
+        "statusCode": "200",
+        "headers": {},
+        "x": 1320,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "4d87126b6cdd384f",
+        "type": "switch",
+        "z": "747a24a6918e731b",
+        "name": "ParamsExist?",
+        "property": "query",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "empty"
+            },
+            {
+                "t": "nempty"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 960,
+        "y": 1080,
+        "wires": [
+            [
+                "23f2fb3006875ba0"
+            ],
+            [
+                "4f1305e926842b31"
+            ]
+        ],
+        "outputLabels": [
+            "No",
+            "Yes"
+        ]
+    },
+    {
+        "id": "23f2fb3006875ba0",
+        "type": "http response",
+        "z": "747a24a6918e731b",
+        "name": "",
+        "statusCode": "400",
+        "headers": {},
+        "x": 1140,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "c61056faa2aa2f6b",
+        "type": "bcrypt",
+        "z": "747a24a6918e731b",
+        "name": "",
+        "action": "encrypt",
+        "field": "payload.password",
+        "hash": "payload",
+        "target": "payload",
+        "assignment": "replace",
+        "match": "match",
+        "outputs": 1,
+        "rounds": 10,
+        "x": 570,
+        "y": 1120,
+        "wires": [
+            [
+                "bac3283183ee1a6b"
+            ]
+        ]
+    },
+    {
+        "id": "cf3f9117c4e88727",
+        "type": "switch",
+        "z": "747a24a6918e731b",
+        "name": "Password?",
+        "property": "payload.password",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "empty"
+            },
+            {
+                "t": "nempty"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 410,
+        "y": 1080,
+        "wires": [
+            [
+                "bac3283183ee1a6b"
+            ],
+            [
+                "c61056faa2aa2f6b"
+            ]
+        ],
+        "outputLabels": [
+            "No",
+            "Yes"
+        ]
+    },
+    {
+        "id": "aa60c923861e8e7e",
+        "type": "http response",
+        "z": "747a24a6918e731b",
+        "name": "",
+        "statusCode": "200",
+        "headers": {},
+        "x": 1540,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "b05be1329e97dd8e",
+        "type": "postgresql",
+        "z": "747a24a6918e731b",
+        "name": "",
+        "query": "SELECT groups_id\nFROM user_groups\nWHERE user_uuid = $1\n",
+        "postgreSQLConfig": "d4f09427d91ae234",
+        "split": false,
+        "rowsPerMsg": "1",
+        "outputs": 1,
+        "x": 910,
+        "y": 800,
+        "wires": [
+            [
+                "acfb0408842c18bd"
+            ]
+        ]
+    },
+    {
+        "id": "acfb0408842c18bd",
+        "type": "function",
+        "z": "747a24a6918e731b",
+        "name": "function 29",
+        "func": "let groups_id = []\n\nfor (let i = 0; i < msg.payload.length; i++) {\n    groups_id.push(msg.payload[i].groups_id)\n}\n\nmsg.user[msg.count].groups = groups_id\n\nmsg.count = msg.count + 1;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1080,
+        "y": 800,
+        "wires": [
+            [
+                "ea60da4d61fd0f77"
+            ]
+        ]
+    },
+    {
+        "id": "ea60da4d61fd0f77",
+        "type": "switch",
+        "z": "747a24a6918e731b",
+        "name": "",
+        "property": "count",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gte",
+                "v": "user.length",
+                "vt": "msg"
+            },
+            {
+                "t": "lt",
+                "v": "user.length",
+                "vt": "msg"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1230,
+        "y": 800,
+        "wires": [
+            [
+                "ec9a338df7aed226"
+            ],
+            [
+                "508ce6449bf65b2b"
+            ]
+        ]
+    },
+    {
+        "id": "508ce6449bf65b2b",
+        "type": "function",
+        "z": "747a24a6918e731b",
+        "name": "function 30",
+        "func": "\nmsg.params = [msg.tab[msg.count]]\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 800,
+        "wires": [
+            [
+                "b05be1329e97dd8e"
+            ]
+        ]
+    },
+    {
+        "id": "ec9a338df7aed226",
+        "type": "function",
+        "z": "747a24a6918e731b",
+        "name": "function 31",
+        "func": "msg.payload = msg.user\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1380,
+        "y": 800,
+        "wires": [
+            [
+                "aa60c923861e8e7e"
+            ]
+        ]
+    },
+    {
+        "id": "9a53465e61367392",
+        "type": "function",
+        "z": "747a24a6918e731b",
+        "name": "Id_params",
+        "func": "let tab = []\n\nfor(let i = 0; i<msg.payload.length; i++){\n    tab.push(msg.payload[i].uuid)\n}\n\nmsg.user = msg.payload;\nmsg.tab = tab;\nmsg.count = 0;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 800,
+        "wires": [
+            [
+                "508ce6449bf65b2b"
+            ]
+        ]
+    },
+    {
+        "id": "49d44b08ce9bc595",
+        "type": "jwt sign",
+        "z": "747a24a6918e731b",
+        "name": "Access",
+        "alg": "RS512",
+        "exp": "10000",
+        "jwkurl": "",
+        "jwkkid": "rsa_priv_key",
+        "secret": "",
+        "key": "C:\\intern\\test\\rsa_priv_key",
+        "signvar": "token",
+        "storetoken": "payload",
+        "x": 1620,
+        "y": 160,
+        "wires": [
+            [
+                "0e2fef935c2204de"
+            ]
+        ]
+    },
+    {
+        "id": "e1b30207c3af932d",
+        "type": "jwt verify",
+        "z": "747a24a6918e731b",
+        "name": "",
+        "alg": [
+            "RS256"
+        ],
+        "jwkurl": "",
+        "secret": "",
+        "key": "C:\\intern\\test\\rsa_pub_key",
+        "signvar": "payload",
+        "storetoken": "payload",
+        "x": 1790,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e1ce594793a58581",
+        "type": "file",
+        "z": "747a24a6918e731b",
+        "name": "",
+        "filename": "C:\\intern\\test\\rsa_priv_key",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "x": 797,
+        "y": 1359,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "af88ca056aead8c9",
+        "type": "inject",
+        "z": "747a24a6918e731b",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "Create Key Files",
+        "payload": "",
+        "payloadType": "str",
+        "x": 206,
+        "y": 1361,
+        "wires": [
+            [
+                "e0b540007ba88e37",
+                "fbf56a0604fdd2c3"
+            ]
+        ]
+    },
+    {
+        "id": "e0b540007ba88e37",
+        "type": "template",
+        "z": "747a24a6918e731b",
+        "name": "RSA Private Key",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "-----BEGIN RSA PRIVATE KEY-----\nMIIEpAIBAAKCAQEA2+d7uinqCDZYnZpyqCGnoeAR+aCWDC0YI7ZqKzH2RyjcHOpI\nIoswrPRZgF56y1x87a/QatPZmNmctEeNSNOM1qHfZSyxHCEyqENiNS3PEzUJ9RHK\nB7eDHKZGeQYhOmtXqm3zB8ORtVrngvDBsZT9A686p7Zo21ESOlXFZBieRVyimrEe\nJqcSwKq4gYG8GU7lc7r1fZCi81KL5K/6dxdMrmQeMYXgetH5SPIBFo4Mq47oJqiV\n48T87zCFHEzEikC+f1bbsNmOfryAwZtzTHQ7i/AU6kpOiNRMizC/cP7SNodc01Mk\nE1IXAv4fXTvEcmxTyRWPp2kiPR5oZ1R76B6v3wIDAQABAoIBAG1etQ/DFu3csbg4\n/7uVeX0uJ2KDNv15VB8285jmMXn03XzYHOZpWd07bmRFGUeZiVzh64OmN/wohyK2\nz5Mf/FUnjycP0kqOTFaZpPeUAACqiXhEz7mE0QXnwPciUFZw2tod8xiycP7E5o4e\nVgePdUNm3IJbW81wheNTk2gUQmt2Giwiu8ilcvPXyvNKBRLw+XM7UXINYtBk/7xM\ntcYd19mmjumUUXK4cw4qhoNE3l+GfCJ8S+FjCazLFCFnAe2CKX3CeJv7paoxenit\niQ6lQk1nhdN4+T5CnrTao1P9nBZiBqtvOICRDc+9QgMKHmmuPzPeYuqmGPd6F8s7\nMIQ4xvECgYEA8lxCg5sH4MUZbNFSn3fkP/iisiRzth4TXHv9OmdcRdTRSJrWXxND\nWbTb+Alj5vP4mBgxMTcycPS/qLSInQJaXjxEF4aQlBNLj4iZRvZENkseKrju+MyO\nJGOmcnkzfFiZLb/TLFMhBBpfVPItZci1kBE8/Mz6b9S1PmZnBWjdJfkCgYEA6Eex\nTtySIyLq/VQcuw+fgCI0lkZ0Ctg/nbs1YHbfMcyih60bWRsDX9KvexWy60nUQHNu\n/pc73rSW8ggIfTqx2UTHJTiNwBLm/XE2HxPnzcB6zf9CBhgqoQPxgBWfxtaiGCGR\nMyrsNxXt49LMUn2p6JNuLXtaKWweDfJbziLiGpcCgYEAkQFIPouENCRZKPU4lPbb\nlrbBSQpsPNtTxDLe+JGc8J77NJCHkEzrMAH41jdwEV+JLh7TV9npkRGullaloiMl\nRFqUdurpF99Phyo4Yu+3MjDRdMg/GpbwuK7yiG0hs9UimO+7fjqid1z8Csv3A34J\nu4/EyJAvirdeVV5ZZzAtmKkCgYEAmzIrmdFuIuPVtmVYvPN3UpmIIU/5gLVz6+OF\nimpiPlfH0Hcs6qBN5NxUOx0IaoTtuBJoetp5OhfXMueDJIjvA4gctxXOQCNhCr11\nt9YI70RHyRNf/cpv0R1dYoMQOj52F0F2ToXDRhr001+o/QTRXYAEAYeFel+uxQrF\npDlScQkCgYA7JewsTmXZyCfUytL9r+SxNjZLicmw2JALGBwavY5rZtSFKsmPr/zV\nDwjP9gtV6T/ObEshwDonI0tsDq6KOJB/8AI97uwcPa1c8x0jnfvRe9uoZ/qiKA+X\nqwqVkk/b6KowQo/XFMFa05batx2Xs41m5pQ/sSQPuR0FWHFVmKTF8g==\n-----END RSA PRIVATE KEY-----\n",
+        "output": "str",
+        "x": 520,
+        "y": 1360,
+        "wires": [
+            [
+                "e1ce594793a58581"
+            ]
+        ]
+    },
+    {
+        "id": "44a4c031fd06a94f",
+        "type": "file",
+        "z": "747a24a6918e731b",
+        "name": "",
+        "filename": "C:\\intern\\test\\rsa_pub_key",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "x": 796,
+        "y": 1408,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fbf56a0604fdd2c3",
+        "type": "template",
+        "z": "747a24a6918e731b",
+        "name": "RSA Public Key",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2+d7uinqCDZYnZpyqCGn\noeAR+aCWDC0YI7ZqKzH2RyjcHOpIIoswrPRZgF56y1x87a/QatPZmNmctEeNSNOM\n1qHfZSyxHCEyqENiNS3PEzUJ9RHKB7eDHKZGeQYhOmtXqm3zB8ORtVrngvDBsZT9\nA686p7Zo21ESOlXFZBieRVyimrEeJqcSwKq4gYG8GU7lc7r1fZCi81KL5K/6dxdM\nrmQeMYXgetH5SPIBFo4Mq47oJqiV48T87zCFHEzEikC+f1bbsNmOfryAwZtzTHQ7\ni/AU6kpOiNRMizC/cP7SNodc01MkE1IXAv4fXTvEcmxTyRWPp2kiPR5oZ1R76B6v\n3wIDAQAB\n-----END PUBLIC KEY-----\n",
+        "output": "str",
+        "x": 519,
+        "y": 1409,
+        "wires": [
+            [
+                "44a4c031fd06a94f"
+            ]
+        ]
+    },
+    {
+        "id": "0e6b74827cb7d040",
+        "type": "function",
+        "z": "747a24a6918e731b",
+        "name": "function 43",
+        "func": "let tokens = {\n    \"access\": msg.payload,\n    \"refresh\": msg.token\n}\n\nmsg.payload = JSON.stringify(tokens)\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2010,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0e2fef935c2204de",
+        "type": "jwt sign",
+        "z": "747a24a6918e731b",
+        "name": "Refresh",
+        "alg": "RS512",
+        "exp": "604800000",
+        "jwkurl": "",
+        "jwkkid": "rsa_priv_key",
+        "secret": "",
+        "key": "C:\\intern\\test\\rsa_priv_key",
+        "signvar": "token",
+        "storetoken": "token",
+        "x": 1820,
+        "y": 160,
+        "wires": [
+            [
+                "0e6b74827cb7d040"
+            ]
+        ]
+    },
+    {
+        "id": "ac512537f5c255bb",
+        "type": "function",
+        "z": "747a24a6918e731b",
+        "name": "function 45",
+        "func": "msg.token = {uuid: msg.payload.uuid}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1430,
+        "y": 160,
+        "wires": [
+            [
+                "49d44b08ce9bc595"
+            ]
+        ]
+    },
+    {
+        "id": "http_in",
+        "type": "http in",
+        "z": "747a24a6918e731b",
+        "name": "",
+        "url": "/getAllMachine",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 1810,
+        "y": 940,
+        "wires": [
+            [
+                "function_set_headers"
+            ]
+        ]
+    },
+    {
+        "id": "function_set_headers",
+        "type": "function",
+        "z": "747a24a6918e731b",
+        "name": "Set CORS Headers",
+        "func": "msg.headers = msg.headers || {};\nmsg.headers['Access-Control-Allow-Origin'] = 'http://localhost:5173';\nmsg.headers['Access-Control-Allow-Credentials'] = 'true';\nmsg.headers['Access-Control-Allow-Methods'] = 'GET,HEAD,OPTIONS,POST,PUT';\nmsg.headers['Access-Control-Allow-Headers'] = 'Origin, X-Requested-With, Content-Type, Accept, Authorization';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2090,
+        "y": 980,
+        "wires": [
+            [
+                "http_response"
+            ]
+        ]
+    },
+    {
+        "id": "http_response",
+        "type": "http response",
+        "z": "747a24a6918e731b",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 2270,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "options_in",
+        "type": "http in",
+        "z": "747a24a6918e731b",
+        "name": "",
+        "url": "/getAllMachine",
+        "method": "options",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 1870,
+        "y": 1040,
+        "wires": [
+            [
+                "function_set_headers",
+                "http_response_options"
+            ]
+        ]
+    },
+    {
+        "id": "http_response_options",
+        "type": "http response",
+        "z": "747a24a6918e731b",
+        "name": "",
+        "statusCode": "200",
+        "headers": {},
+        "x": 2270,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "7cad2da410798bb3",
+        "type": "catch",
+        "z": "747a24a6918e731b",
+        "name": "",
+        "scope": [
+            "1e79a2e25f2caefc"
+        ],
+        "uncaught": false,
+        "x": 170,
+        "y": 1580,
+        "wires": [
+            [
+                "aaab22d63d99e9fc"
+            ]
+        ]
+    },
+    {
+        "id": "aaab22d63d99e9fc",
+        "type": "function",
+        "z": "747a24a6918e731b",
+        "name": "function 49",
+        "func": "msg.payload = JSON.stringify(msg.req.cookies,null,4);\nif (msg.statusCode == 401){\n    return [msg, null]\n}\n\nreturn [null, msg];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 1580,
+        "wires": [
+            [
+                "6a4728b96acc0b66"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "6a4728b96acc0b66",
+        "type": "http response",
+        "z": "747a24a6918e731b",
+        "name": "",
+        "statusCode": "401",
+        "headers": {},
+        "x": 560,
+        "y": 1580,
+        "wires": []
+    },
+    {
+        "id": "ad2834ca6b85e508",
+        "type": "http in",
+        "z": "747a24a6918e731b",
+        "name": "",
+        "url": "/refreshToken",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 210,
+        "y": 1500,
+        "wires": [
+            [
+                "69fa9e3164fc50be"
+            ]
+        ]
+    },
+    {
+        "id": "3f73b0775be25d25",
+        "type": "jwt verify",
+        "z": "747a24a6918e731b",
+        "name": "",
+        "alg": [
+            "RS512"
+        ],
+        "jwkurl": "",
+        "secret": "",
+        "key": "C:\\intern\\test\\rsa_pub_key",
+        "signvar": "topic",
+        "storetoken": "topic",
+        "x": 730,
+        "y": 1500,
+        "wires": [
+            [
+                "e687731d2224ddf1"
+            ]
+        ]
+    },
+    {
+        "id": "3fe43ec5138b20a1",
+        "type": "http response",
+        "z": "747a24a6918e731b",
+        "name": "",
+        "statusCode": "200",
+        "headers": {
+            "match": "true"
+        },
+        "x": 1600,
+        "y": 1500,
+        "wires": []
+    },
+    {
+        "id": "aa6ec612de9fb3cf",
+        "type": "jwt sign",
+        "z": "747a24a6918e731b",
+        "name": "Access",
+        "alg": "RS512",
+        "exp": "10000",
+        "jwkurl": "",
+        "jwkkid": "rsa_priv_key",
+        "secret": "",
+        "key": "C:\\intern\\test\\rsa_priv_key",
+        "signvar": "topic",
+        "storetoken": "token",
+        "x": 1080,
+        "y": 1500,
+        "wires": [
+            [
+                "ce06bac7508eb344"
+            ]
+        ]
+    },
+    {
+        "id": "aaf6941990a3433f",
+        "type": "function",
+        "z": "747a24a6918e731b",
+        "name": "function 50",
+        "func": "let tokens = {\n    \"access\": msg.token,\n    \"refresh\": msg.topic\n}\n\nmsg.payload = JSON.stringify(tokens)\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1410,
+        "y": 1500,
+        "wires": [
+            [
+                "3fe43ec5138b20a1"
+            ]
+        ]
+    },
+    {
+        "id": "ce06bac7508eb344",
+        "type": "jwt sign",
+        "z": "747a24a6918e731b",
+        "name": "Refresh",
+        "alg": "RS512",
+        "exp": "604800000",
+        "jwkurl": "",
+        "jwkkid": "rsa_priv_key",
+        "secret": "",
+        "key": "C:\\intern\\test\\rsa_priv_key",
+        "signvar": "topic",
+        "storetoken": "topic",
+        "x": 1240,
+        "y": 1500,
+        "wires": [
+            [
+                "aaf6941990a3433f"
+            ]
+        ]
+    },
+    {
+        "id": "69fa9e3164fc50be",
+        "type": "json",
+        "z": "747a24a6918e731b",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 390,
+        "y": 1500,
+        "wires": [
+            [
+                "745fd9e065945779"
+            ]
+        ]
+    },
+    {
+        "id": "745fd9e065945779",
+        "type": "function",
+        "z": "747a24a6918e731b",
+        "name": "function 51",
+        "func": "msg.topic = msg.payload.refresh\nmsg.token = msg.payload.access\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 1500,
+        "wires": [
+            [
+                "3f73b0775be25d25"
+            ]
+        ]
+    },
+    {
+        "id": "e687731d2224ddf1",
+        "type": "function",
+        "z": "747a24a6918e731b",
+        "name": "function 52",
+        "func": "msg.topic = { uuid: msg.payload.uuid }\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 1500,
+        "wires": [
+            [
+                "aa6ec612de9fb3cf"
+            ]
+        ]
+    },
+    {
+        "id": "0b0f7a6c1b620151",
+        "type": "http in",
+        "z": "e370f738154306ce",
+        "name": "",
+        "url": "/addGroup",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 140,
+        "y": 100,
+        "wires": [
+            [
+                "cbb27c2ec5a4b113"
+            ]
+        ]
+    },
+    {
+        "id": "cbb27c2ec5a4b113",
+        "type": "function",
+        "z": "e370f738154306ce",
+        "name": "Group_params",
+        "func": "let groupname = msg.payload.group_name;\nmsg.users = msg.payload.members_uuid;\n\nmsg.params = [groupname]\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 100,
+        "wires": [
+            [
+                "ee05e67d5e46720a"
+            ]
+        ]
+    },
+    {
+        "id": "ee05e67d5e46720a",
+        "type": "postgresql",
+        "z": "e370f738154306ce",
+        "name": "CreateGroup",
+        "query": "INSERT INTO groups(group_name)\nVALUES($1)\nRETURNING *;",
+        "postgreSQLConfig": "d4f09427d91ae234",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 530,
+        "y": 100,
+        "wires": [
+            [
+                "d0308625cf124e08"
+            ]
+        ]
+    },
+    {
+        "id": "9d735e1508f2c495",
+        "type": "http response",
+        "z": "e370f738154306ce",
+        "name": "",
+        "statusCode": "200",
+        "headers": {},
+        "x": 1320,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "d0308625cf124e08",
+        "type": "function",
+        "z": "e370f738154306ce",
+        "name": "SQL_AddUserToGroup",
+        "func": "msg.payload = msg.payload[0];\nlet users = msg.users || [];\nlet groups_id = msg.payload.groups_id\n\nlet sql = 'INSERT INTO user_groups(groups_id, user_uuid) VALUES'\n\nfor (let i = 0; i<users.length; i++){\n    if(i !== 0) sql = sql.concat('',',')\n    sql = sql.concat(' ',`('${groups_id}', '${users[i]}')`)\n}\n\nif(users.length !== 0){\n    msg.query = sql\n} else {\n    msg.query = ''\n}\n\nmsg.params = []\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 100,
+        "wires": [
+            [
+                "2082f19143ad1eb8"
+            ]
+        ]
+    },
+    {
+        "id": "76602173e8f29930",
+        "type": "postgresql",
+        "z": "e370f738154306ce",
+        "name": "AddToGroup",
+        "query": "",
+        "postgreSQLConfig": "d4f09427d91ae234",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 1150,
+        "y": 120,
+        "wires": [
+            [
+                "9d735e1508f2c495"
+            ]
+        ]
+    },
+    {
+        "id": "2082f19143ad1eb8",
+        "type": "switch",
+        "z": "e370f738154306ce",
+        "name": "UsersExist?",
+        "property": "query",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "empty"
+            },
+            {
+                "t": "nempty"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 970,
+        "y": 100,
+        "wires": [
+            [
+                "9d735e1508f2c495"
+            ],
+            [
+                "76602173e8f29930"
+            ]
+        ]
+    },
+    {
+        "id": "d0bb4e67fafc7f57",
+        "type": "http in",
+        "z": "e370f738154306ce",
+        "name": "",
+        "url": "/deleteGroup",
+        "method": "delete",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 120,
+        "y": 220,
+        "wires": [
+            [
+                "bfda24badfc2a74a"
+            ]
+        ]
+    },
+    {
+        "id": "bfda24badfc2a74a",
+        "type": "function",
+        "z": "e370f738154306ce",
+        "name": "Uuid_params",
+        "func": "let id = msg.payload.groups_id;\n\nmsg.params = [id]\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 220,
+        "wires": [
+            [
+                "ade833e273928056"
+            ]
+        ]
+    },
+    {
+        "id": "ade833e273928056",
+        "type": "postgresql",
+        "z": "e370f738154306ce",
+        "name": "DeleteFromUser_Groups",
+        "query": "DELETE FROM user_groups\nWHERE groups_id = $1;",
+        "postgreSQLConfig": "d4f09427d91ae234",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 550,
+        "y": 220,
+        "wires": [
+            [
+                "7adb1d76edc99b03"
+            ]
+        ]
+    },
+    {
+        "id": "da4a9f2419379bd0",
+        "type": "http response",
+        "z": "e370f738154306ce",
+        "name": "",
+        "statusCode": "200",
+        "headers": {},
+        "x": 1180,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "7adb1d76edc99b03",
+        "type": "postgresql",
+        "z": "e370f738154306ce",
+        "name": "DeleteFromGroups",
+        "query": "DELETE FROM groups\nWHERE groups_id = $1\nRETURNING *;",
+        "postgreSQLConfig": "d4f09427d91ae234",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 790,
+        "y": 220,
+        "wires": [
+            [
+                "d951f532165056fe"
+            ]
+        ]
+    },
+    {
+        "id": "d951f532165056fe",
+        "type": "switch",
+        "z": "e370f738154306ce",
+        "name": "UserDeleted?",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "nempty"
+            },
+            {
+                "t": "empty"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1000,
+        "y": 220,
+        "wires": [
+            [
+                "da4a9f2419379bd0"
+            ],
+            [
+                "93c42e1f91f1fb19"
+            ]
+        ],
+        "outputLabels": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "id": "93c42e1f91f1fb19",
+        "type": "http response",
+        "z": "e370f738154306ce",
+        "name": "",
+        "statusCode": "400",
+        "headers": {},
+        "x": 1180,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "118de4d5d44fa03e",
+        "type": "http in",
+        "z": "e370f738154306ce",
+        "name": "",
+        "url": "/showGroups",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 130,
+        "y": 320,
+        "wires": [
+            [
+                "365b43ffd9a2e84c"
+            ]
+        ]
+    },
+    {
+        "id": "365b43ffd9a2e84c",
+        "type": "postgresql",
+        "z": "e370f738154306ce",
+        "name": "",
+        "query": "SELECT groups.groups_id, \ngroups.group_name,\nproduct_lines.product_line_id \nFROM groups\nLEFT JOIN product_lines\nON product_lines.group_id = groups.groups_id ",
+        "postgreSQLConfig": "d4f09427d91ae234",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 330,
+        "y": 320,
+        "wires": [
+            [
+                "d8f59ac93d2de5d8"
+            ]
+        ]
+    },
+    {
+        "id": "c940f9a15d77ea98",
+        "type": "http response",
+        "z": "e370f738154306ce",
+        "name": "",
+        "statusCode": "200",
+        "headers": {},
+        "x": 1480,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "6208a6bdbed6f1ba",
+        "type": "postgresql",
+        "z": "e370f738154306ce",
+        "name": "",
+        "query": "SELECT users.uuid\nFROM users, user_groups\nWHERE users.uuid = user_groups.user_uuid\nAND user_groups.groups_id = $1\n",
+        "postgreSQLConfig": "d4f09427d91ae234",
+        "split": false,
+        "rowsPerMsg": "1",
+        "outputs": 1,
+        "x": 850,
+        "y": 320,
+        "wires": [
+            [
+                "6bd5bddfd8b71e8b"
+            ]
+        ]
+    },
+    {
+        "id": "d8f59ac93d2de5d8",
+        "type": "function",
+        "z": "e370f738154306ce",
+        "name": "Id_params",
+        "func": "let tab = []\n\nfor(let i = 0; i<msg.payload.length; i++){\n    tab.push(msg.payload[i].groups_id)\n}\n\nmsg.group = msg.payload;\nmsg.tab = tab;\nmsg.count = 0;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 320,
+        "wires": [
+            [
+                "3242f499a2fd8811"
+            ]
+        ]
+    },
+    {
+        "id": "6bd5bddfd8b71e8b",
+        "type": "function",
+        "z": "e370f738154306ce",
+        "name": "function 26",
+        "func": "let uuids = []\n\nfor (let i = 0; i < msg.payload.length; i++) {\n    uuids.push(msg.payload[i].uuid)\n}\n\nmsg.group[msg.count].members_uuid = uuids\n\nmsg.count = msg.count + 1;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1020,
+        "y": 320,
+        "wires": [
+            [
+                "7381b4d501b392c9"
+            ]
+        ]
+    },
+    {
+        "id": "7381b4d501b392c9",
+        "type": "switch",
+        "z": "e370f738154306ce",
+        "name": "",
+        "property": "count",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gte",
+                "v": "group.length",
+                "vt": "msg"
+            },
+            {
+                "t": "lt",
+                "v": "group.length",
+                "vt": "msg"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1170,
+        "y": 320,
+        "wires": [
+            [
+                "2bb7d88440b3ab55"
+            ],
+            [
+                "3242f499a2fd8811"
+            ]
+        ]
+    },
+    {
+        "id": "3242f499a2fd8811",
+        "type": "function",
+        "z": "e370f738154306ce",
+        "name": "function 27",
+        "func": "\nmsg.params = [msg.tab[msg.count]]\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 320,
+        "wires": [
+            [
+                "6208a6bdbed6f1ba"
+            ]
+        ]
+    },
+    {
+        "id": "2bb7d88440b3ab55",
+        "type": "function",
+        "z": "e370f738154306ce",
+        "name": "function 28",
+        "func": "msg.payload = msg.group\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1320,
+        "y": 320,
+        "wires": [
+            [
+                "c940f9a15d77ea98"
+            ]
+        ]
+    },
+    {
+        "id": "8c2abec2cf6c5c0a",
+        "type": "postgresql",
+        "z": "e370f738154306ce",
+        "name": "DeleteFromUser_Groups",
+        "query": "DELETE FROM user_groups\nWHERE groups_id = $1;",
+        "postgreSQLConfig": "d4f09427d91ae234",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 950,
+        "y": 400,
+        "wires": [
+            [
+                "be920874ff7ab75f"
+            ]
+        ]
+    },
+    {
+        "id": "eae90806dcfdeb62",
+        "type": "function",
+        "z": "e370f738154306ce",
+        "name": "Uuid_params",
+        "func": "let id = msg.payload.groups_id;\n\nmsg.users = msg.payload.newmembers\nmsg.groupid = msg.payload.groups_id\nmsg.params = [id]\n\nif (typeof msg.payload.productline !== undefined){\n    msg.lineid = msg.payload.productline\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 400,
+        "wires": [
+            [
+                "82e623d2c79bc628"
+            ]
+        ]
+    },
+    {
+        "id": "be920874ff7ab75f",
+        "type": "function",
+        "z": "e370f738154306ce",
+        "name": "SQL_AddUserToGroup",
+        "func": "let users = msg.users || [];\nlet groups_id = msg.params[0]\n\nlet sql = 'INSERT INTO user_groups(groups_id, user_uuid) VALUES'\n\nfor (let i = 0; i<users.length; i++){\n    if(i !== 0) sql = sql.concat('',',')\n    sql = sql.concat(' ',`('${groups_id}', '${users[i]}')`)\n}\n\nif(users.length !== 0){\n    msg.query = sql\n} else {\n    msg.query = ''\n}\n\nmsg.params = []\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1210,
+        "y": 400,
+        "wires": [
+            [
+                "b4170755281436d7"
+            ]
+        ]
+    },
+    {
+        "id": "fb5b2cedaae5a167",
+        "type": "http response",
+        "z": "e370f738154306ce",
+        "name": "",
+        "statusCode": "200",
+        "headers": {},
+        "x": 2340,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "b4170755281436d7",
+        "type": "postgresql",
+        "z": "e370f738154306ce",
+        "name": "AddToGroup",
+        "query": "",
+        "postgreSQLConfig": "d4f09427d91ae234",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 1430,
+        "y": 400,
+        "wires": [
+            [
+                "cb43b7401cdb5d8a"
+            ]
+        ]
+    },
+    {
+        "id": "82e623d2c79bc628",
+        "type": "switch",
+        "z": "e370f738154306ce",
+        "name": "NewName?",
+        "property": "payload.newname",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "empty"
+            },
+            {
+                "t": "nempty"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 510,
+        "y": 400,
+        "wires": [
+            [
+                "8c2abec2cf6c5c0a"
+            ],
+            [
+                "6dc423a57c309fc8"
+            ]
+        ]
+    },
+    {
+        "id": "6dc423a57c309fc8",
+        "type": "postgresql",
+        "z": "e370f738154306ce",
+        "name": "UpdateGroupName",
+        "query": "UPDATE groups \nSET group_name = '{{{msg.payload.newname}}}'\nWHERE groups_id = $1",
+        "postgreSQLConfig": "d4f09427d91ae234",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 710,
+        "y": 420,
+        "wires": [
+            [
+                "8c2abec2cf6c5c0a"
+            ]
+        ]
+    },
+    {
+        "id": "a740b6b16e3197c4",
+        "type": "http in",
+        "z": "e370f738154306ce",
+        "name": "",
+        "url": "editGroup",
+        "method": "put",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 140,
+        "y": 400,
+        "wires": [
+            [
+                "eae90806dcfdeb62"
+            ]
+        ]
+    },
+    {
+        "id": "7f7ed3ebacd7f345",
+        "type": "http in",
+        "z": "e370f738154306ce",
+        "name": "",
+        "url": "showProductLine",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 120,
+        "y": 520,
+        "wires": [
+            [
+                "98e2edc813d7c97f"
+            ]
+        ]
+    },
+    {
+        "id": "98e2edc813d7c97f",
+        "type": "postgresql",
+        "z": "e370f738154306ce",
+        "name": "ShowProductLines",
+        "query": "SELECT product_line_id FROM product_lines;",
+        "postgreSQLConfig": "d4f09427d91ae234",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 350,
+        "y": 520,
+        "wires": [
+            [
+                "aa21497c76da5aa2"
+            ]
+        ]
+    },
+    {
+        "id": "aa21497c76da5aa2",
+        "type": "http response",
+        "z": "e370f738154306ce",
+        "name": "",
+        "statusCode": "200",
+        "headers": {},
+        "x": 540,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "3feb0eb6b6d02924",
+        "type": "switch",
+        "z": "e370f738154306ce",
+        "name": "LineChange",
+        "property": "lineid",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "null"
+            },
+            {
+                "t": "nnull"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1810,
+        "y": 400,
+        "wires": [
+            [
+                "fb5b2cedaae5a167"
+            ],
+            [
+                "4a90566d2d431907"
+            ]
+        ]
+    },
+    {
+        "id": "282e250c7b519502",
+        "type": "postgresql",
+        "z": "e370f738154306ce",
+        "name": "",
+        "query": "UPDATE product_lines\nSET group_id = {{{msg.groupid}}}\nWHERE product_line_id = {{{msg.lineid}}}",
+        "postgreSQLConfig": "d4f09427d91ae234",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 2170,
+        "y": 420,
+        "wires": [
+            [
+                "fb5b2cedaae5a167"
+            ]
+        ]
+    },
+    {
+        "id": "cb43b7401cdb5d8a",
+        "type": "function",
+        "z": "e370f738154306ce",
+        "name": "function 32",
+        "func": "msg.query=\"\"\nif(msg.lineid == \"\"){\n    msg.lineid = null\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1600,
+        "y": 400,
+        "wires": [
+            [
+                "3feb0eb6b6d02924"
+            ]
+        ]
+    },
+    {
+        "id": "4a90566d2d431907",
+        "type": "postgresql",
+        "z": "e370f738154306ce",
+        "name": "",
+        "query": "UPDATE product_lines\nSET group_id = null\nWHERE group_id = {{{msg.groupid}}}\n\n",
+        "postgreSQLConfig": "d4f09427d91ae234",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 1990,
+        "y": 420,
+        "wires": [
+            [
+                "282e250c7b519502"
+            ]
+        ]
+    },
+    {
+        "id": "fca2efafeedee0e3",
+        "type": "http in",
+        "z": "743814465b28750d",
+        "name": "",
+        "url": "/getAllMachine",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 150,
+        "y": 260,
+        "wires": [
+            [
+                "464997af37d29e42"
+            ]
+        ]
+    },
+    {
+        "id": "4074f26d84e50932",
+        "type": "postgresql",
+        "z": "743814465b28750d",
+        "name": "",
+        "query": "",
+        "postgreSQLConfig": "d4f09427d91ae234",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 630,
+        "y": 260,
+        "wires": [
+            [
+                "92883ef279d991ff"
+            ]
+        ]
+    },
+    {
+        "id": "5722cd0636640c50",
+        "type": "http response",
+        "z": "743814465b28750d",
+        "name": "",
+        "statusCode": "200",
+        "headers": {},
+        "x": 1100,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "464997af37d29e42",
+        "type": "function",
+        "z": "743814465b28750d",
+        "name": "function 4",
+        "func": "let filterStr = \"\"\n\nfunction splitByFirstHyphen(str) {\n  const hyphenIndex = str.indexOf('-');\n\n  if (hyphenIndex !== -1) {\n    return {\n      before: str.substring(0, hyphenIndex),\n      after: str.substring(hyphenIndex + 1)\n    };\n  } else {\n    return {\n      before: str,\n      after: ''\n    };\n  }\n}\n\nfunction transformStr(value, compareVal){\n  if (compareVal == \"\") return \"\"\n  let {before, after} = splitByFirstHyphen(value)\n  let lessOrGreater = after == \"start\" ? \">=\": \"<=\"\n    return `AND m.${before} ${lessOrGreater} ${compareVal} `\n}\n\nlet allKeys = Object.keys(msg.req.body)\nlet allValues = Object.values(msg.req.body)\n\nallKeys.map((el, i) => filterStr += transformStr(el, allValues[i]))\n\nlet uuid = msg.req.headers.authorization\nlet check = `WITH LatestMachines AS ( SELECT m.machine_type, pl.product_line_id, MAX(m.created_at) AS latest_created_at FROM machines m JOIN product_lines pl ON pl.product_line_id = m.product_line_id JOIN groups g ON g.groups_id = pl.group_id JOIN user_groups ug ON ug.groups_id = g.groups_id JOIN users u ON u.uuid = ug.user_uuid WHERE u.uuid = '${uuid}' GROUP BY m.machine_type, pl.product_line_id) SELECT m.* FROM machines m JOIN LatestMachines lm ON m.machine_type = lm.machine_type AND m.created_at = lm.latest_created_at AND m.product_line_id = lm.product_line_id WHERE m.machine_id > 0 ${filterStr};`\nmsg.filterStr = check\nmsg.query = check;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 260,
+        "wires": [
+            [
+                "4074f26d84e50932"
+            ]
+        ]
+    },
+    {
+        "id": "92883ef279d991ff",
+        "type": "switch",
+        "z": "743814465b28750d",
+        "name": "Check if data exists ",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "undefined",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 850,
+        "y": 320,
+        "wires": [
+            [
+                "a941b6aedbc9dfef"
+            ],
+            [
+                "5722cd0636640c50"
+            ]
+        ]
+    },
+    {
+        "id": "a941b6aedbc9dfef",
+        "type": "http response",
+        "z": "743814465b28750d",
+        "name": "",
+        "statusCode": "404",
+        "headers": {},
+        "x": 1100,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "71ca52a627b87c03",
+        "type": "http in",
+        "z": "743814465b28750d",
+        "name": "",
+        "url": "/getMachineByID/:id",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 130,
+        "y": 320,
+        "wires": [
+            [
+                "292f9b34dee99fb7"
+            ]
+        ]
+    },
+    {
+        "id": "292f9b34dee99fb7",
+        "type": "function",
+        "z": "743814465b28750d",
+        "name": "function 10",
+        "func": "let id = msg.req.params.id\nlet start = msg.payload.start\nlet end = msg.payload.end\n\n// msg.params = [msg.req.params.id, msg.payload.start, msg.payload.end]\n\n\nlet queryStr = \"\"\nstart ? queryStr += `AND created_at > '${start}'` : \"\"\nend ? queryStr += `AND created_at < '${end}'` : \"\"\n\n\nmsg.query = `SELECT * FROM machines WHERE machine_id = ${id} ${queryStr} ORDER BY created_at`\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 320,
+        "wires": [
+            [
+                "aa6e76305d7bd8f0"
+            ]
+        ]
+    },
+    {
+        "id": "aa6e76305d7bd8f0",
+        "type": "postgresql",
+        "z": "743814465b28750d",
+        "name": "",
+        "query": "",
+        "postgreSQLConfig": "d4f09427d91ae234",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 630,
+        "y": 320,
+        "wires": [
+            [
+                "92883ef279d991ff"
+            ]
+        ]
+    },
+    {
+        "id": "db972925cc67c4fd",
+        "type": "http in",
+        "z": "743814465b28750d",
+        "name": "",
+        "url": "/getProperties",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 150,
+        "y": 380,
+        "wires": [
+            [
+                "f4bcd4b9d695fe04"
+            ]
+        ]
+    },
+    {
+        "id": "8418ea83ce05a430",
+        "type": "postgresql",
+        "z": "743814465b28750d",
+        "name": "",
+        "query": "SELECT m.* \n\tFROM machine_properties m\nJOIN \n\tproduct_lines pl ON pl.product_line_id = m.product_line_id \nJOIN \n\tgroups g ON g.groups_id = pl.group_id \nJOIN \n\tuser_groups ug ON ug.groups_id = g.groups_id \nJOIN users u ON u.uuid = ug.user_uuid \n\tWHERE u.uuid = $1",
+        "postgreSQLConfig": "d4f09427d91ae234",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 630,
+        "y": 380,
+        "wires": [
+            [
+                "92883ef279d991ff"
+            ]
+        ]
+    },
+    {
+        "id": "87f8fcdb0930c067",
+        "type": "jwt verify",
+        "z": "743814465b28750d",
+        "name": "",
+        "alg": [
+            "RS512"
+        ],
+        "jwkurl": "",
+        "secret": "",
+        "key": "C:\\intern\\test\\rsa_pub_key",
+        "signvar": "bearer",
+        "storetoken": "payload",
+        "x": 270,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f4bcd4b9d695fe04",
+        "type": "function",
+        "z": "743814465b28750d",
+        "name": "function 14",
+        "func": "let uuid = msg.req.headers.authorization\nmsg.params = [uuid]\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 380,
+        "wires": [
+            [
+                "8418ea83ce05a430"
+            ]
+        ]
+    },
+    {
+        "id": "648b8e4218fa86ee",
+        "type": "catch",
+        "z": "743814465b28750d",
+        "name": "",
+        "scope": null,
+        "uncaught": false,
+        "x": 160,
+        "y": 100,
+        "wires": [
+            [
+                "1254a11a495918f8",
+                "3c71d843c4dff076"
+            ]
+        ]
+    },
+    {
+        "id": "44d61b01ec591f39",
+        "type": "jwt verify",
+        "z": "743814465b28750d",
+        "name": "",
+        "alg": [
+            "RS512"
+        ],
+        "jwkurl": "",
+        "secret": "",
+        "key": "C:\\intern\\test\\rsa_pub_key",
+        "signvar": "bearer",
+        "storetoken": "payload",
+        "x": 290,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1254a11a495918f8",
+        "type": "debug",
+        "z": "743814465b28750d",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 440,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "3c71d843c4dff076",
+        "type": "http response",
+        "z": "743814465b28750d",
+        "name": "",
+        "statusCode": "400",
+        "headers": {},
+        "x": 440,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "b8f28e35f22e3d7e",
+        "type": "postgresql",
+        "z": "5baf52e38d3b9ef4",
+        "name": "",
+        "query": "",
+        "postgreSQLConfig": "d4f09427d91ae234",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 690,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6f689f43076166ac",
+        "type": "mail",
+        "z": "5baf52e38d3b9ef4",
+        "name": "",
+        "x": 1950,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "9858aa6ed1d64920",
+        "type": "mqtt in",
+        "z": "5baf52e38d3b9ef4",
+        "name": "Machine",
+        "topic": "ZG/#",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "4012ec32ccf26ef9",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 140,
+        "y": 160,
+        "wires": [
+            [
+                "17c6b8b6d96a0dbf"
+            ]
+        ]
+    },
+    {
+        "id": "17c6b8b6d96a0dbf",
+        "type": "join",
+        "z": "5baf52e38d3b9ef4",
+        "name": "",
+        "mode": "custom",
+        "build": "array",
+        "property": "",
+        "propertyType": "full",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "useparts": false,
+        "accumulate": false,
+        "timeout": "1",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "num",
+        "reduceFixup": "",
+        "x": 310,
+        "y": 160,
+        "wires": [
+            [
+                "1152f80e131e81f0"
+            ]
+        ]
+    },
+    {
+        "id": "1152f80e131e81f0",
+        "type": "mqttMaper",
+        "z": "5baf52e38d3b9ef4",
+        "name": "",
+        "jsonCode": "",
+        "x": 490,
+        "y": 160,
+        "wires": [
+            [
+                "b8f28e35f22e3d7e",
+                "73955ad3fa53740b"
+            ]
+        ]
+    },
+    {
+        "id": "caa1741c32fcc64c",
+        "type": "websocket in",
+        "z": "5baf52e38d3b9ef4",
+        "name": "",
+        "server": "",
+        "client": "7a9320a41e7f64c1",
+        "x": 230,
+        "y": 380,
+        "wires": [
+            [
+                "5688ad8cdbd51520"
+            ]
+        ]
+    },
+    {
+        "id": "ef7efe7d361835da",
+        "type": "Cache in",
+        "z": "5baf52e38d3b9ef4",
+        "name": "",
+        "cache": "f8f3d8ee0c9b1c5f",
+        "keyType": "msg",
+        "keyProperty": "machines.machine_type",
+        "valueType": "msg",
+        "valueProperty": "payload",
+        "useString": false,
+        "outputs": 1,
+        "x": 850,
+        "y": 160,
+        "wires": [
+            [
+                "8511ad771376ce18"
+            ]
+        ]
+    },
+    {
+        "id": "5688ad8cdbd51520",
+        "type": "json",
+        "z": "5baf52e38d3b9ef4",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 410,
+        "y": 380,
+        "wires": [
+            [
+                "330522fee50e030c"
+            ]
+        ]
+    },
+    {
+        "id": "520036bca7936639",
+        "type": "maper",
+        "z": "5baf52e38d3b9ef4",
+        "name": "",
+        "jsonCode": "{\"userProp\":[\"speed\",\"belt_speed\",\"temperature\",\"pressure\",\"elements_ready\",\"torque\",\"power\",\"gas_flow\"],\"serverProp\":[\"speed\",\"belt_speed\",\"temperature\",\"pressure\",\"elements_ready\",\"torque\",\"power\",\"gas_flow\"]}",
+        "x": 1430,
+        "y": 260,
+        "wires": [
+            [
+                "863d24aa65a5c43a"
+            ]
+        ]
+    },
+    {
+        "id": "863d24aa65a5c43a",
+        "type": "alert",
+        "z": "5baf52e38d3b9ef4",
+        "name": "",
+        "x": 1570,
+        "y": 260,
+        "wires": [
+            [
+                "683256d696a2faab"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "d842d09510809d38",
+        "type": "postgresql",
+        "z": "5baf52e38d3b9ef4",
+        "name": "",
+        "query": "",
+        "postgreSQLConfig": "d4f09427d91ae234",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 1090,
+        "y": 260,
+        "wires": [
+            [
+                "98d32cd1f8896c9e"
+            ]
+        ]
+    },
+    {
+        "id": "98d32cd1f8896c9e",
+        "type": "function",
+        "z": "5baf52e38d3b9ef4",
+        "name": "function 35",
+        "func": "msg.alert_message = msg.payload[0]\nlet emails = []\nfor (let i=0; i < msg.payload.length; i++){\n    emails.push(msg.payload[i].email)\n}\n\nmsg.payload = msg.machines\nmsg.emails = emails;\n\nmsg.query = `\nINSERT INTO alerts (groups_id, machine_id, machine_type, message) \nVALUES (\n\t1, ${msg.machines.machine_id}, '${msg.machines.machine_type}', '${msg.messageForUser}')\n\n`\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1270,
+        "y": 260,
+        "wires": [
+            [
+                "520036bca7936639"
+            ]
+        ]
+    },
+    {
+        "id": "b364432e5241c5d5",
+        "type": "function",
+        "z": "5baf52e38d3b9ef4",
+        "name": "function 36",
+        "func": "msg.query = `\nSELECT a.*, u.email\nFROM alerts_properties a \nJOIN groups g ON g.groups_id = a.groups_id\nJOIN user_groups ug ON ug.groups_id = g.groups_id\nJOIN users u ON u.uuid = ug.user_uuid\nJOIN product_lines pl ON pl.group_id = g.groups_id\nWHERE pl.product_line_id = ${msg.machines.product_line_id}`\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 260,
+        "wires": [
+            [
+                "d842d09510809d38"
+            ]
+        ]
+    },
+    {
+        "id": "11df28cc9eb02468",
+        "type": "websocket out",
+        "z": "5baf52e38d3b9ef4",
+        "name": "",
+        "server": "",
+        "client": "7a9320a41e7f64c1",
+        "x": 1670,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "b2ae5a4e88d23515",
+        "type": "function",
+        "z": "5baf52e38d3b9ef4",
+        "name": "function 37",
+        "func": "if (msg.payload && Object.keys(msg.payload).length > 0 && msg.payload.machine_type == msg.machines.machine_type){\n    msg._session = msg.payload.session\n    msg.payload = msg.machines\n    return [msg, null]\n}\nelse{\n    return [null, msg]\n}\n\n\n",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1450,
+        "y": 160,
+        "wires": [
+            [
+                "11df28cc9eb02468"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "d43b496a5777e287",
+        "type": "Cache out",
+        "z": "5baf52e38d3b9ef4",
+        "name": "",
+        "cache": "f8f3d8ee0c9b1c5f",
+        "keyType": "msg",
+        "keyProperty": "machine_type",
+        "valueType": "msg",
+        "valueProperty": "output",
+        "ttlType": "msg",
+        "ttlProperty": "",
+        "useString": false,
+        "x": 1170,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "ddd5f5d452067f21",
+        "type": "function",
+        "z": "5baf52e38d3b9ef4",
+        "name": "function 38",
+        "func": "msg.machine_type = msg.payload.machine_type\n\nif (msg.output == null) {\n    msg.output = []\n}\nif(msg.payload.disconnect){\n    msg.output = msg.output.filter( obj => obj.uuid != msg.payload.uuid)\n}\nelse{\n    let newObj = {\n        machine_type: msg.machine_type,\n        uuid: msg.payload.uuid,\n        session: msg._session,\n    } \n\n    msg.output.push(newObj)\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 990,
+        "y": 380,
+        "wires": [
+            [
+                "d43b496a5777e287"
+            ]
+        ]
+    },
+    {
+        "id": "97c55bdb2ee1559d",
+        "type": "Cache in",
+        "z": "5baf52e38d3b9ef4",
+        "name": "",
+        "cache": "f8f3d8ee0c9b1c5f",
+        "keyType": "msg",
+        "keyProperty": "payload.machine_type",
+        "valueType": "msg",
+        "valueProperty": "output",
+        "useString": false,
+        "outputs": 1,
+        "x": 810,
+        "y": 380,
+        "wires": [
+            [
+                "ddd5f5d452067f21"
+            ]
+        ]
+    },
+    {
+        "id": "73955ad3fa53740b",
+        "type": "split",
+        "z": "5baf52e38d3b9ef4",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "property": "machines",
+        "x": 670,
+        "y": 160,
+        "wires": [
+            [
+                "ef7efe7d361835da",
+                "b364432e5241c5d5"
+            ]
+        ]
+    },
+    {
+        "id": "0338c15c1e84aca0",
+        "type": "postgresql",
+        "z": "5baf52e38d3b9ef4",
+        "name": "",
+        "query": "",
+        "postgreSQLConfig": "d4f09427d91ae234",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 1930,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "683256d696a2faab",
+        "type": "function",
+        "z": "5baf52e38d3b9ef4",
+        "name": "function 39",
+        "func": "msg.query = `\nINSERT INTO alerts (groups_id, machine_id, machine_type, message) \nVALUES (\n\t1, ${msg.machines.machine_id}, '${msg.machines.machine_type}', '${msg.messageForUser}')\n\n`\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1730,
+        "y": 260,
+        "wires": [
+            [
+                "0338c15c1e84aca0",
+                "6f689f43076166ac",
+                "f3b5c90d7bcab977"
+            ]
+        ]
+    },
+    {
+        "id": "3e5fd3d080f4f606",
+        "type": "split",
+        "z": "5baf52e38d3b9ef4",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "property": "payload",
+        "x": 1250,
+        "y": 160,
+        "wires": [
+            [
+                "b2ae5a4e88d23515"
+            ]
+        ]
+    },
+    {
+        "id": "8511ad771376ce18",
+        "type": "function",
+        "z": "5baf52e38d3b9ef4",
+        "name": "function 40",
+        "func": "if (msg.payload == null) {\n    return [null, msg]\n}\nreturn [msg, null];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1050,
+        "y": 160,
+        "wires": [
+            [
+                "3e5fd3d080f4f606"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "330522fee50e030c",
+        "type": "function",
+        "z": "5baf52e38d3b9ef4",
+        "name": "function 44",
+        "func": "msg.token = msg.payload.uuid\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 380,
+        "wires": [
+            [
+                "97c55bdb2ee1559d"
+            ]
+        ]
+    },
+    {
+        "id": "f3b5c90d7bcab977",
+        "type": "debug",
+        "z": "5baf52e38d3b9ef4",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1960,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "1df2ac3025f4d1d4",
+        "type": "inject",
+        "z": "cde388cf2ef20258",
+        "name": "Generate each day",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "00 12 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 160,
+        "y": 220,
+        "wires": [
+            [
+                "b3cb6105d6385b40"
+            ]
+        ]
+    },
+    {
+        "id": "98038a4c82b48d5e",
+        "type": "postgresql",
+        "z": "cde388cf2ef20258",
+        "name": "GetAllColumns",
+        "query": "SELECT column_name\nFROM information_schema.columns\nWHERE table_name = 'machines';",
+        "postgreSQLConfig": "d4f09427d91ae234",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 580,
+        "y": 180,
+        "wires": [
+            [
+                "6634c349d7fb0052"
+            ]
+        ]
+    },
+    {
+        "id": "6634c349d7fb0052",
+        "type": "function",
+        "z": "cde388cf2ef20258",
+        "name": "GetVariables",
+        "func": "let variables = []\nconst options = ['created_at', 'machine_id', 'product_line_id', 'machine_type']\nfor (let i = 0; i<msg.payload.length; i++){\n    if (options.indexOf(msg.payload[i].column_name) === -1){\n        variables.push(msg.payload[i].column_name)\n    }\n}\n\nmsg.agregating = variables\nmsg.func = {avg: true, min: true, max:true, median:true}\n//msg.options = options\nmsg.grouping = ['machine_id', 'product_line_id', 'machine_type']\n//msg.grouping2 = [{w: 1, value: 'machine_id'},{w: 2, value: 'product_line_id'},{w: 1, value: 'machine_type'}]\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 180,
+        "wires": [
+            [
+                "57e66dd1751835b2"
+            ]
+        ]
+    },
+    {
+        "id": "57e66dd1751835b2",
+        "type": "postgresql",
+        "z": "cde388cf2ef20258",
+        "name": "",
+        "query": "SELECT * FROM machines\nWHERE created_at > '{{{msg.date_from}}}'\nAND created_at < '{{{msg.date_to}}}';",
+        "postgreSQLConfig": "d4f09427d91ae234",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 950,
+        "y": 180,
+        "wires": [
+            [
+                "a595d5c2816ee72b"
+            ]
+        ]
+    },
+    {
+        "id": "31272d37d3f32b73",
+        "type": "ReportJSON",
+        "z": "cde388cf2ef20258",
+        "name": "",
+        "x": 1350,
+        "y": 180,
+        "wires": [
+            [
+                "94319c884f14e547"
+            ]
+        ]
+    },
+    {
+        "id": "3a67c75edacd9f5f",
+        "type": "file",
+        "z": "cde388cf2ef20258",
+        "name": "Save",
+        "filename": "name",
+        "filenameType": "msg",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "base64",
+        "x": 1690,
+        "y": 180,
+        "wires": [
+            [
+                "8d6457069a3234b1"
+            ]
+        ]
+    },
+    {
+        "id": "a595d5c2816ee72b",
+        "type": "AgregateData",
+        "z": "cde388cf2ef20258",
+        "name": "",
+        "x": 1140,
+        "y": 180,
+        "wires": [
+            [
+                "31272d37d3f32b73"
+            ]
+        ]
+    },
+    {
+        "id": "22641d16d493f79e",
+        "type": "http in",
+        "z": "cde388cf2ef20258",
+        "name": "",
+        "url": "/getReport",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 180,
+        "y": 140,
+        "wires": [
+            [
+                "b3cb6105d6385b40"
+            ]
+        ]
+    },
+    {
+        "id": "b3cb6105d6385b40",
+        "type": "function",
+        "z": "cde388cf2ef20258",
+        "name": "SetTime",
+        "func": "let d_to = new Date()\nlet d_from = new Date()\nd_from.setDate(d_from.getDate() -1 )\n\nmsg.date_from = msg.payload[0] || d_from.toJSON().slice(0, 10)\nmsg.date_to = msg.payload[1] || d_to.toJSON().slice(0, 10)\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 180,
+        "wires": [
+            [
+                "98038a4c82b48d5e"
+            ]
+        ]
+    },
+    {
+        "id": "8d6457069a3234b1",
+        "type": "http response",
+        "z": "cde388cf2ef20258",
+        "name": "",
+        "statusCode": "200",
+        "headers": {},
+        "x": 1900,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "94319c884f14e547",
+        "type": "pdfbuilder",
+        "z": "cde388cf2ef20258",
+        "name": "",
+        "outputType": "base64",
+        "inputProperty": "payload",
+        "options": "{}",
+        "outputProperty": "payload",
+        "x": 1540,
+        "y": 180,
+        "wires": [
+            [
+                "3a67c75edacd9f5f"
+            ]
+        ]
+    }
+]
